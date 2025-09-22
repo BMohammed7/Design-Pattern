@@ -1,27 +1,18 @@
-public class BrandABulb implements SmartBulb{
-    private int powerUsage;
+public class BrandASmartBulb implements SmartBulb {
+    private EnergyDataReader reader = new EnergyDataReader();
 
-    public BrandABulb() {
-        this.powerUsage = loadPowerUsage(); // Factory Method
-    }
-
-    private int loadPowerUsage() throws IOException {
-        Properties props = new Properties();
-        FileInputStream fis = new FileInputStream("bulb_config.properties");
-        props.load(fis);
-        fis.close();
-
-        String value = props.getProperty("BrandA_Bulb_Power", "60");
-        return Integer.parseInt(value);
+    @Override
+    public void configureUsage() {
+        reader.configureUsage();
     }
 
     @Override
-    public void turnOn() {
-        System.out.println("Brand A Bulb ON (" + powerUsage + "W)");
+    public double getPowerUsage() {
+        return reader.getEnergyUsage();
     }
 
     @Override
-    public void turnOff() {
-        System.out.println("Brand A Bulb OFF");
+    public String toString() {
+        return "BrandA Smart Bulb - Usage: " + getPowerUsage();
     }
 }
