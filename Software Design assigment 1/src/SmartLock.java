@@ -1,4 +1,5 @@
-interface SmartLock {
-    void  lock();
-    void unlock();
+public interface SmartLock {
+    void configureUsage();
+    double getEnergyConsumption();
+    String toString();
 }
