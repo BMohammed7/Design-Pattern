@@ -1,4 +1,4 @@
-public class BrandFactoryA implements DeviceFactory {
+public class BrandFactoryA implements SmartDeviceFactory {
     @Override
     public SmartBulb createBulb() {
         return new BrandASmartBulb();
@@ -9,3 +9,4 @@ public class BrandFactoryA implements DeviceFactory {
         return new BrandASmartLock();
     }
 }
+
