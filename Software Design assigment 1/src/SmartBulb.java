@@ -1,4 +1,5 @@
-interface  SmartBulb {
-    void turnOn() ;
-    void turnOff();
+public interface SmartBulb {
+    void configureUsage();
+    double getPowerUsage();
+    String toString();
 }
