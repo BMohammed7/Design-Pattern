@@ -1,11 +1,11 @@
-public class BrandAFactory implements SmartDeviceFactory{
+public class BrandFactoryA implements DeviceFactory {
     @Override
-    public SmartBulb createSmartBulb() {
-        return new BrandABulb();
+    public SmartBulb createBulb() {
+        return new BrandASmartBulb();
     }
 
     @Override
-    public SmartLock createSmartLock() {
-        return new BrandALock();
+    public SmartLock createLock() {
+        return new BrandASmartLock();
     }
 }
