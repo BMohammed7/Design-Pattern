@@ -3,6 +3,7 @@
 **Author(s):** Hanzalah Imran, Mohid Sohail, Burhanuddin Mohammed
 
 > This project applies the Abstract Factory and Factory Method design patterns to build and manage smart home devices.
+
 > We created an interface that both factories use to make the smart devices.
 ---
 
