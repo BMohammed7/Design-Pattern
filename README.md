@@ -1,6 +1,6 @@
 # Software Design & Architecture Assignment 1 (Smart Home Devices)
 
-**Author(s):** Hanzalah Imran, Mohid Sohail, Burhanuddin Mohammed
+**Author(s):** Hanzalah Imran - , Mohid Sohail - 100912993, Burhanuddin Mohammed - 100943760
 
 > This project applies the Abstract Factory and Factory Method design patterns to build and manage smart home devices.
 
