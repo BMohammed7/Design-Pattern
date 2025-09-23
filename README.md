@@ -10,7 +10,7 @@
 ## Repository Contents
 
 - `uml diagram/`  
-  Contains the class diagrams and any other designs we might have used (PNG, SVG).
+  Contains the class diagrams and any other designs we might have used.
 
 - `factory/`  
   **Factory (Interface):** Declares the `make()` method and acts as the product interface that all concrete products (bulb, lock) must implement.
@@ -20,9 +20,6 @@
 
 - `SmartLock` (Interface – Abstract Product)  
   Defines what every smart lock must do (configure usage, return, print itself).
-
-- `UsageDataReader` (Utility – Helper Class)  
-  Not a part of Abstract Factory directly. Provides the actual "energy usage" values. Every bulb/lock depends on this class to simulate consumption.
 
 - `BrandASmartBulb` (Concrete Product – implements SmartBulb)  
   Represents a Brand A smart bulb. Uses `UsageDataReader` to simulate usage.
